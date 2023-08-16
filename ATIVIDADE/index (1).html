@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    text-align: left;
+    margin: 150px;
+    color: black;
+    background-color: greenyellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    </style>
+</head>
+<body>
+    <script>
+        var sexo = prompt("qual o seu sexo? \ndigite \n'M' para masculino \n'F' para feminino")
+
+switch (sexo){
+    case 'M':
+        alert("seja bem vindo");
+        break;
+    case 'm':
+        alert('seja bem vindo');
+        break;
+    case 'F':
+        alert('seja bem vinda');
+        break;
+    case 'f':
+        alert('seja bem vinda');
+        break;
+    default:
+        alert('opção inválida')
+}
+var disciplinas = ['Muita gente sabe que a palavra text, em inglês, quer dizer “texto”. Mas, de um tempo pra cá, o termo text também tem sido usado como verbo, com o significado de “escrever mensagem pelo celular” ou “mandar um SMS”.'];
+
+for (let i = 0; i < disciplinas.length; i++) {
+  document.write(disciplinas[i] + '<br>');
+}
+
+
+let disciplinas2 = ['fundamentos de programação para internet', 'arquitetura e organização de computadores', 'legislação aplicada a tecnologia da informação', 'linguagem e interação', 'economia e sociedade'];
+let i = 0;
+
+while (i < disciplinas2.length) {
+  document.write(disciplinas2[i] + '<br>');
+  i++;
+}
+
+let tabuada = 11;
+
+for (let i = 1; i <= 10; i++) {
+  let result = tabuada * i;
+  document.write(tabuada + ' x ' + i + ' = ' + result + '<br>');
+}
+class Car {
+    constructor(marca, modelo, ano, cor, topSpeed) {
+      this.marca = marca;
+      this.modelo = modelo;
+      this.ano = ano;
+      this.cor = cor;
+      this.topSpeed = topSpeed;
+    }
+  }
+  
+  var meuCarro = new Car('nissan', 'gtr34', 2002, 'branco', 420);
+  
+  for (var especificacao in meuCarro) {
+    document.write(especificacao + ': ' + meuCarro[especificacao]);
+  }
+    </script>
+</body>
+</html>
